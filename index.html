@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENGAGÉ·ES - La Croix-Saint-Ouen</title>
+
+    <title>ENGAGÉ-ES - La Croix-Saint-Ouen</title>
+    <meta name="description" content="Liste ENGAGÉ-ES - Projet citoyen pour La Croix-Saint-Ouen. Découvrez notre équipe, nos propositions et participez à construire la commune de demain.">
+    <meta name="keywords" content="Engagé-es, La Croix-Saint-Ouen, municipale, citoyenne, Geoffroy Giraux, élections, projet, équipe">
+    <meta name="author" content="Engagé-es">
 
     <!-- Police -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -30,35 +34,52 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: auto;
-            padding: 20px;
+            padding: 30px 20px;
+        }
+
+        /* Bloc image + texte */
+        .presentation-block {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        /* Forcer l’alignement côte à côte sur PC */
+        @media (min-width: 900px) {
+            .presentation-block {
+                flex-wrap: nowrap;
+            }
         }
 
         .affiche {
             width: 100%;
-            max-width: 900px;
+            max-width: 380px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
         .presentation {
-            margin-top: 30px;
+            flex: 1;
             background: white;
             padding: 25px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             font-size: 1.1rem;
             line-height: 1.6;
+            text-align: justify; /* Justification demandée */
         }
 
+        /* Bouton du formulaire */
         .btn-form {
             display: block;
             text-align: center;
             background-color: #2C3E50;
             color: white;
             padding: 15px 20px;
-            margin: 35px auto;
+            margin: 40px auto;
             width: fit-content;
             border-radius: 8px;
             font-size: 1.2rem;
@@ -75,17 +96,16 @@
             background-color: #2C3E50;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 30px 20px;
+            margin-top: 50px;
+            line-height: 2;
         }
 
         footer a {
             color: #ffffff;
             text-decoration: none;
             font-weight: 600;
-            margin: 0 10px;
         }
-
         footer a:hover {
             text-decoration: underline;
         }
@@ -94,40 +114,47 @@
 <body>
 
 <header>
-    <h1>ENGAGÉ·ES</h1>
+    <h1>ENGAGÉ-ES</h1>
 </header>
 
 <div class="container">
 
-    <img src="affiche.jpg" alt="Affiche de campagne" class="affiche">
+    <div class="presentation-block">
 
-    <div class="presentation">
-        <p>
-            <strong>Geoffroy Giraux<br>
-            51 ans, 2 enfants.</strong>
-        </p>
-        <p>
-            Avec une solide expertise reposant sur 25 ans d'activités au sein des collectivités territoriales et un mandat dans l'opposition municipale, je vous propose de découvrir notre projet <strong>"Engagé-es"</strong> qui vous replace au cœur des décisions communales.
-        </p>
-        <p>
-            Une équipe inédite, forte d'expériences variées, sans attaches politiques, à l'écoute des préoccupations de tous, sans compromission et sans fausses promesses. Nous mettons toutes nos compétences au service d'une gestion saine et transparente de la commune, respectueuse du bien-être et de la sécurité de chacun, pour que La Croix Saint Ouen soit chaleureuse et vivante.
-        </p>
-        <p>
-            C'est ça être <strong>"Engagé-es".</strong>
-        </p>
+        <!-- Affiche -->
+        <img src="affiche.jpg" alt="Affiche de campagne" class="affiche">
+
+        <!-- Texte -->
+        <div class="presentation">
+            <p>
+                <strong>Geoffroy Giraux<br>
+                51 ans, 2 enfants.</strong>
+            </p>
+            <p>
+                Avec une solide expertise reposant sur 25 ans d'activités au sein des collectivités territoriales et un mandat dans l'opposition municipale, je vous propose de découvrir notre projet <strong>"Engagé-es"</strong> qui vous replace au cœur des décisions communales.
+            </p>
+            <p>
+                Une équipe inédite, forte d'expériences variées, sans attaches politiques, à l'écoute des préoccupations de tous, sans compromission et sans fausses promesses. Nous mettons toutes nos compétences au service d'une gestion saine et transparente de la commune, respectueuse du bien-être et de la sécurité de chacun, pour que La Croix Saint Ouen soit chaleureuse et vivante.
+            </p>
+            <p>
+                C'est ça être <strong>"Engagé-es".</strong>
+            </p>
+        </div>
     </div>
 
-    <!-- BOUTON GOOGLE FORM : mets ton vrai lien à la place du # -->
-    <a href="#" target="_blank" class="btn-form">Participer – Proposer une idée</a>
+    <!-- BOUTON GOOGLE FORM -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrweY1xif8uY34YFJ8mfib8cZ5aioSgiEoqGxwY0QfOqt3tA/viewform" 
+       target="_blank" 
+       class="btn-form">
+       Participer – questionnaire de citoyenneté
+    </a>
 
 </div>
 
 <footer>
-    <p>
-        <a href="#">https://www.instagram.com/engage.es.lacroixsaintouen?igsh=dnByb3p4bjE3Y3pz</a> |
-        <a href="#">https://www.facebook.com/share/1D7J2Rh92y/</a> |
-        <a href="mailto:https:engage.es.lacroixsaintouen@gmail.com">Nous contacter</a>
-    </p>
+    <p><strong>Nous contacter :</strong> <a href="mailto:engage.es.lacroixsaintouen@gmail.com">engage.es.lacroixsaintouen@gmail.com</a></p>
+    <p><a href="https://www.facebook.com/share/1D7J2Rh92y/" target="_blank">Facebook</a></p>
+    <p><a href="https://www.instagram.com/engage.es.lacroixsaintouen?igsh=dnByb3p4bjE3Y3pz" target="_blank">Instagram</a></p>
 </footer>
 
 </body>
