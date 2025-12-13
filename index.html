@@ -9,7 +9,6 @@
     <meta name="keywords" content="Engagé-es, La Croix-Saint-Ouen, municipale, citoyenne, Geoffroy Giraux, élections 2026">
     <meta name="author" content="Engagé-es">
 
-    <!-- Police -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -39,7 +38,7 @@
             padding: 30px 20px;
         }
 
-        /* Bloc image + texte */
+        /* Bloc politique */
         .presentation-block {
             display: flex;
             gap: 30px;
@@ -71,35 +70,52 @@
             text-align: justify;
         }
 
-        /* Bloc Fêtes */
-        .fetes {
-            margin-top: 70px;
-            padding: 40px 25px;
-            background: linear-gradient(135deg, #ffffff, #eef3f8);
-            border-radius: 12px;
+        /* Séparateur guirlande */
+        .separator {
             text-align: center;
+            font-size: 1.6rem;
+            margin: 60px 0 40px;
+            color: #B08D57;
+        }
+
+        /* Bloc fêtes */
+        .fetes {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
-        .fetes h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: #2C3E50;
+        .fetes-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 900px) {
+            .fetes-content {
+                flex-wrap: nowrap;
+            }
+        }
+
+        .fetes-text {
+            flex: 2;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .fetes-text .cap {
+            margin-top: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
 
         .fetes img {
-            max-width: 260px;
+            flex: 1;
+            max-width: 220px;
             width: 100%;
-            margin: 20px auto;
             border-radius: 10px;
-        }
-
-        .fetes .cap {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-top: 20px;
-            color: #2C3E50;
-            letter-spacing: 1px;
         }
 
         footer {
@@ -131,22 +147,17 @@
 
 <div class="container">
 
+    <!-- BLOC POLITIQUE -->
     <div class="presentation-block">
-
-        <!-- Affiche -->
         <img src="affiche.jpg" alt="Affiche de campagne" class="affiche">
 
-        <!-- Texte -->
         <div class="presentation">
-            <p>
-                <strong>Geoffroy Giraux<br>
-                51 ans, 2 enfants.</strong>
-            </p>
+            <p><strong>Geoffroy Giraux<br>51 ans, 2 enfants.</strong></p>
             <p>
                 Avec une solide expertise reposant sur 25 ans d'activités au sein des collectivités territoriales et un mandat dans l'opposition municipale, je vous propose de découvrir notre projet <strong>"Engagé-es"</strong> qui vous replace au cœur des décisions communales.
             </p>
             <p>
-                Une équipe inédite, forte d'expériences variées, sans attaches politiques, à l'écoute des préoccupations de tous, sans compromission et sans fausses promesses. Nous mettons toutes nos compétences au service d'une gestion saine et transparente de la commune, respectueuse du bien-être et de la sécurité de chacun, pour que La Croix Saint Ouen soit chaleureuse et vivante.
+                Une équipe inédite, forte d'expériences variées, sans attaches politiques, à l'écoute des préoccupations de tous, sans compromission et sans fausses promesses. Nous mettons toutes nos compétences au service d'une gestion saine et transparente de la commune.
             </p>
             <p>
                 C'est ça être <strong>"Engagé-es".</strong>
@@ -154,33 +165,35 @@
         </div>
     </div>
 
+    <!-- SÉPARATEUR -->
+    <div class="separator">🎄 ✨ 🎄 ✨ 🎄</div>
+
     <!-- BLOC FÊTES -->
     <section class="fetes">
-        <h2>
-            Les Engagé-es vous souhaitent de bonnes fêtes de fin d'année !
-        </h2>
+        <div class="fetes-content">
+            <div class="fetes-text">
+                <p>
+                    Les <strong>Engagé-es</strong> vous souhaitent de très belles fêtes de fin d'année.
+                </p>
+                <p class="cap">
+                    Changeons de cap en 2026 !
+                </p>
+            </div>
 
-        <img src="sapin.jpg" alt="Sapin de Noël">
-
-        <div class="cap">
-            Changeons de cap en 2026 !
+            <img src="sapin.jpg" alt="Sapin de Noël">
         </div>
     </section>
 
 </div>
 
 <footer>
-    <p><strong>Nous contacter :</strong> 
+    <p><strong>Nous contacter :</strong>
         <a href="mailto:engage.es.lacroixsaintouen@gmail.com">
             engage.es.lacroixsaintouen@gmail.com
         </a>
     </p>
-    <p>
-        <a href="https://www.facebook.com/share/1D7J2Rh92y/" target="_blank">Facebook</a>
-    </p>
-    <p>
-        <a href="https://www.instagram.com/engage.es.lacroixsaintouen?igsh=dnByb3p4bjE3Y3pz" target="_blank">Instagram</a>
-    </p>
+    <p><a href="https://www.facebook.com/share/1D7J2Rh92y/" target="_blank">Facebook</a></p>
+    <p><a href="https://www.instagram.com/engage.es.lacroixsaintouen?igsh=dnByb3p4bjE3Y3pz" target="_blank">Instagram</a></p>
 </footer>
 
 </body>
