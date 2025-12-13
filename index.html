@@ -31,6 +31,10 @@
             letter-spacing: 2px;
             margin: 0;
         }
+        
+        header a {
+            text-decoration: none; /* Pour enlever le soulignement du lien */
+        }
 
         .container {
             max-width: 1100px;
@@ -57,6 +61,7 @@
             max-width: 380px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            object-fit: cover;
         }
 
         .presentation {
@@ -77,19 +82,22 @@
             font-size: 1.6rem;
         }
 
-        /* BLOC FÊTES */
+        /* BLOC FÊTES - COULEUR INVERSÉE */
         .fetes {
-            background-color: #EEF3F9; /* bleu très clair */
+            background-color: #ffffff; /* BLANC pour le conteneur principal */
+            border: 1px solid #e0e0e0; /* Petite bordure subtile */
             border-radius: 14px;
             padding: 35px 30px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            text-align: center; /* Pour centrer le texte et l'appel final */
         }
 
         .fetes-content {
             display: flex;
             align-items: center;
-            gap: 20px; /* rapproché */
+            gap: 30px;
             flex-wrap: wrap;
+            text-align: left; /* Rétablit l'alignement à gauche pour le texte */
         }
 
         @media (min-width: 900px) {
@@ -105,15 +113,17 @@
         }
 
 
-        /* Encadré photo */
+        /* Encadré photo - COULEUR INVERSÉE */
         .fetes-photo {
             flex: 1;
-            background-color: #ffffff;
+            background-color: #EEF3F9; /* BLEU CLAIR pour l'encadré photo */
             padding: 12px;
             border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
             display: flex;
             justify-content: center;
+            align-self: center; /* Centré verticalement dans le bloc Flex */
+            min-width: 200px; /* Assure une taille minimale */
         }
 
         .fetes-photo img {
@@ -122,14 +132,20 @@
             border-radius: 8px;
         }
 
-        .fetes-text .cap {
-            margin-top: 15px;
-            font-weight: 600;
+        /* Appel à l'action en bas */
+        .fetes .cap { 
+            margin-top: 30px; /* Espace après le contenu flex */
+            font-weight: 700;
             letter-spacing: 1px;
+            font-size: 1.5rem; /* Rendu plus grand */
+            text-align: center;
+            color: #E74C3C; /* Couleur d'appel */
+            padding-top: 15px;
+            border-top: 1px dashed #cccccc;
         }
 
 
-	footer {
+        footer {
             background-color: #2C3E50;
             color: white;
             text-align: center;
@@ -153,14 +169,15 @@
 <body>
 
 <header>
-    <h1>ENGAGÉ-ES</h1>
+    <a href="/">
+        <h1>ENGAGÉ-ES</h1>
+    </a>
 </header>
 
 <div class="container">
 
-    <!-- BLOC POLITIQUE -->
     <div class="presentation-block">
-        <img src="affiche.jpg" alt="Affiche de campagne" class="affiche">
+        <img src="affiche.jpg" alt="Affiche de campagne de Geoffroy Giraux pour Engagé-es" class="affiche" loading="lazy">
 
         <div class="presentation">
             <p><strong>Geoffroy Giraux<br>51 ans, 2 enfants.</strong></p>
@@ -176,10 +193,8 @@
         </div>
     </div>
 
-    <!-- SÉPARATEUR -->
-    <div class="separator">🎄 ✨ 🎄 ✨ 🎄 ✨ 🎄 ✨ 🎄</div>
+    <div class="separator">🎄 ✨ 🎄 ✨ 🎄 ✨ 🎄</div>
 
-    <!-- BLOC FÊTES -->
     <section class="fetes">
         <div class="fetes-content">
             <div class="fetes-text">
@@ -189,12 +204,14 @@
             </div>
 
             <div class="fetes-photo">
-                <img src="sapin.jpg" alt="Sapin de Noël">
+                <img src="sapin.jpg" alt="Sapin de Noël décoré, image de saison" loading="lazy">
             </div>
-                <p class="cap">
-                    Changeons de cap en 2026 !
-                </p>
         </div>
+        
+        <p class="cap">
+            Changeons de cap en 2026 !
+        </p>
+
     </section>
 
 </div>
