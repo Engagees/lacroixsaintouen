@@ -38,7 +38,7 @@
             padding: 30px 20px;
         }
 
-        /* Bloc politique */
+        /* BLOC POLITIQUE */
         .presentation-block {
             display: flex;
             gap: 30px;
@@ -70,26 +70,25 @@
             text-align: justify;
         }
 
-        /* Séparateur guirlande */
+        /* Séparateur */
         .separator {
+            margin: 70px 0 40px;
             text-align: center;
             font-size: 1.6rem;
-            margin: 60px 0 40px;
-            color: #B08D57;
         }
 
-        /* Bloc fêtes */
+        /* BLOC FÊTES */
         .fetes {
-            background-color: #ffffff;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            background-color: #EEF3F9; /* bleu très clair */
+            border-radius: 14px;
+            padding: 35px 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
         }
 
         .fetes-content {
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 20px; /* rapproché */
             flex-wrap: wrap;
         }
 
@@ -105,20 +104,32 @@
             line-height: 1.6;
         }
 
+
+        /* Encadré photo */
+        .fetes-photo {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 12px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+            display: flex;
+            justify-content: center;
+        }
+
+        .fetes-photo img {
+            max-width: 200px;
+            width: 100%;
+            border-radius: 8px;
+        }
+
         .fetes-text .cap {
             margin-top: 15px;
             font-weight: 600;
             letter-spacing: 1px;
         }
 
-        .fetes img {
-            flex: 1;
-            max-width: 220px;
-            width: 100%;
-            border-radius: 10px;
-        }
 
-        footer {
+	footer {
             background-color: #2C3E50;
             color: white;
             text-align: center;
@@ -166,7 +177,7 @@
     </div>
 
     <!-- SÉPARATEUR -->
-    <div class="separator">🎄 ✨ 🎄 ✨ 🎄</div>
+    <div class="separator">🎄 ✨ 🎄 ✨ 🎄 ✨ 🎄 ✨ 🎄</div>
 
     <!-- BLOC FÊTES -->
     <section class="fetes">
@@ -175,12 +186,14 @@
                 <p>
                     Les <strong>Engagé-es</strong> vous souhaitent de très belles fêtes de fin d'année.
                 </p>
+            </div>
+
+            <div class="fetes-photo">
+                <img src="sapin.jpg" alt="Sapin de Noël">
+            </div>
                 <p class="cap">
                     Changeons de cap en 2026 !
                 </p>
-            </div>
-
-            <img src="sapin.jpg" alt="Sapin de Noël">
         </div>
     </section>
 
