@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>ENGAGÉ-ES - La Croix-Saint-Ouen</title>
-    <meta name="description" content="Liste ENGAGÉ-ES - Projet citoyen pour La Croix-Saint-Ouen. Découvrez notre équipe, nos propositions et participez à construire la commune de demain.">
-    <meta name="keywords" content="Engagé-es, La Croix-Saint-Ouen, municipale, citoyenne, Geoffroy Giraux, élections, projet, équipe">
+    <meta name="description" content="Liste ENGAGÉ-ES - Projet citoyen pour La Croix-Saint-Ouen. Découvrez notre équipe et notre vision pour la commune.">
+    <meta name="keywords" content="Engagé-es, La Croix-Saint-Ouen, municipale, citoyenne, Geoffroy Giraux, élections 2026">
     <meta name="author" content="Engagé-es">
 
     <!-- Police -->
@@ -47,7 +47,6 @@
             flex-wrap: wrap;
         }
 
-        /* Forcer l’alignement côte à côte sur PC */
         @media (min-width: 900px) {
             .presentation-block {
                 flex-wrap: nowrap;
@@ -72,12 +71,43 @@
             text-align: justify;
         }
 
+        /* Bloc Fêtes */
+        .fetes {
+            margin-top: 70px;
+            padding: 40px 25px;
+            background: linear-gradient(135deg, #ffffff, #eef3f8);
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .fetes h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #2C3E50;
+        }
+
+        .fetes img {
+            max-width: 260px;
+            width: 100%;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .fetes .cap {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 20px;
+            color: #2C3E50;
+            letter-spacing: 1px;
+        }
+
         footer {
             background-color: #2C3E50;
             color: white;
             text-align: center;
             padding: 30px 20px;
-            margin-top: 50px;
+            margin-top: 60px;
             line-height: 2;
         }
 
@@ -92,6 +122,7 @@
         }
     </style>
 </head>
+
 <body>
 
 <header>
@@ -123,16 +154,33 @@
         </div>
     </div>
 
+    <!-- BLOC FÊTES -->
+    <section class="fetes">
+        <h2>
+            Les Engagé-es vous souhaitent de bonnes fêtes de fin d'année !
+        </h2>
+
+        <img src="sapin.jpg" alt="Sapin de Noël">
+
+        <div class="cap">
+            Changeons de cap en 2026 !
+        </div>
+    </section>
+
 </div>
 
 <footer>
-    <p><strong>Nous contacter :</strong>
+    <p><strong>Nous contacter :</strong> 
         <a href="mailto:engage.es.lacroixsaintouen@gmail.com">
             engage.es.lacroixsaintouen@gmail.com
         </a>
     </p>
-    <p><a href="https://www.facebook.com/share/1D7J2Rh92y/" target="_blank">Facebook</a></p>
-    <p><a href="https://www.instagram.com/engage.es.lacroixsaintouen?igsh=dnByb3p4bjE3Y3pz" target="_blank">Instagram</a></p>
+    <p>
+        <a href="https://www.facebook.com/share/1D7J2Rh92y/" target="_blank">Facebook</a>
+    </p>
+    <p>
+        <a href="https://www.instagram.com/engage.es.lacroixsaintouen?igsh=dnByb3p4bjE3Y3pz" target="_blank">Instagram</a>
+    </p>
 </footer>
 
 </body>
