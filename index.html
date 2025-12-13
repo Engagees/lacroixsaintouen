@@ -82,14 +82,14 @@
             font-size: 1.6rem;
         }
 
-        /* BLOC FÊTES - COULEUR INVERSÉE */
+        /* BLOC FÊTES */
         .fetes {
-            background-color: #ffffff; /* BLANC pour le conteneur principal */
-            border: 1px solid #e0e0e0; /* Petite bordure subtile */
+            background-color: #ffffff; /* BLANC */
+            border: 1px solid #e0e0e0; 
             border-radius: 14px;
             padding: 35px 30px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-            text-align: center; /* Pour centrer le texte et l'appel final */
+            text-align: center;
         }
 
         .fetes-content {
@@ -97,7 +97,7 @@
             align-items: center;
             gap: 30px;
             flex-wrap: wrap;
-            text-align: left; /* Rétablit l'alignement à gauche pour le texte */
+            text-align: left; 
         }
 
         @media (min-width: 900px) {
@@ -113,17 +113,17 @@
         }
 
 
-        /* Encadré photo - COULEUR INVERSÉE */
+        /* Encadré photo */
         .fetes-photo {
             flex: 1;
-            background-color: #EEF3F9; /* BLEU CLAIR pour l'encadré photo */
+            background-color: #EEF3F9; /* BLEU CLAIR */
             padding: 12px;
             border-radius: 12px;
             box-shadow: 0 6px 18px rgba(0,0,0,0.08);
             display: flex;
             justify-content: center;
-            align-self: center; /* Centré verticalement dans le bloc Flex */
-            min-width: 200px; /* Assure une taille minimale */
+            align-self: center;
+            min-width: 200px;
         }
 
         .fetes-photo img {
@@ -132,16 +132,17 @@
             border-radius: 8px;
         }
 
-        /* Appel à l'action en bas */
+        /* Appel à l'action en bas (retrait des tirets) */
         .fetes .cap { 
-            margin-top: 30px; /* Espace après le contenu flex */
+            margin-top: 30px; 
+            padding-top: 15px; /* Garde l'espacement du haut */
+            
+            /* Styles maintenus comme demandé */
             font-weight: 700;
             letter-spacing: 1px;
-            font-size: 1.5rem; /* Rendu plus grand */
+            font-size: 1.5rem; 
             text-align: center;
-            color: #E74C3C; /* Couleur d'appel */
-            padding-top: 15px;
-            border-top: 1px dashed #cccccc;
+            color: #E74C3C; 
         }
 
 
