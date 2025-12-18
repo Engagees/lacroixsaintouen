@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ENGAGÉ-ES - La Croix-Saint-Ouen</title>
-    <meta name="description" content="Liste ENGAGÉ-ES - Projet citoyen pour La Croix-Saint-Ouen. Découvrez notre équipe et notre vision pour la commune.">
-    <meta name="keywords" content="Engagé-es, La Croix-Saint-Ouen, municipale, citoyenne, Geoffroy Giraux, élections 2026">
-    <meta name="author" content="Engagé-es">
+    <title>ENGAGÉ-ES – La Croix-Saint-Ouen</title>
+    <meta name="description" content="ENGAGÉ-ES – Projet citoyen pour La Croix-Saint-Ouen. Une équipe indépendante, engagée et à l'écoute pour les élections municipales 2026.">
+    <meta name="keywords" content="Engagé-es, La Croix-Saint-Ouen, élections municipales 2026, projet citoyen, Geoffroy Giraux">
+    <meta name="author" content="ENGAGÉ-ES">
 
+    <!-- Police -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -21,32 +22,28 @@
 
         header {
             background-color: #2C3E50;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
         }
 
         header h1 {
             color: white;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
+            font-size: 2.6rem;
+            letter-spacing: 3px;
             margin: 0;
-        }
-        
-        header a {
-            text-decoration: none;
         }
 
         .container {
             max-width: 1100px;
             margin: auto;
-            padding: 30px 20px;
+            padding: 50px 20px;
         }
 
-        /* BLOC POLITIQUE */
+        /* Bloc politique */
         .presentation-block {
             display: flex;
-            gap: 30px;
-            align-items: flex-start;
+            gap: 40px;
+            align-items: center;
             flex-wrap: wrap;
         }
 
@@ -58,104 +55,85 @@
 
         .affiche {
             width: 100%;
-            max-width: 380px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            object-fit: cover;
+            max-width: 360px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
         }
 
         .presentation {
             flex: 1;
             background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            font-size: 1.1rem;
-            line-height: 1.6;
-            text-align: justify; /* Maintient la justification du texte principal */
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .presentation p:first-child {
+            font-weight: 600;
+            margin-top: 0;
         }
 
         /* Séparateur */
         .separator {
-            margin: 70px 0 40px;
+            margin: 70px auto 50px;
             text-align: center;
             font-size: 1.6rem;
+            opacity: 0.8;
         }
 
-        /* BLOC FÊTES */
-        .fetes {
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0; 
-            border-radius: 14px;
-            padding: 35px 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-            /* Suppression du 'text-align: center;' ici */
+        /* Encadré fêtes */
+        .festive-section {
+            background-color: #E9EFF7;
+            border-radius: 18px;
+            padding: 40px;
         }
 
-        .fetes-content {
+        .festive-content {
             display: flex;
             align-items: center;
             gap: 30px;
             flex-wrap: wrap;
-            text-align: left; 
         }
 
         @media (min-width: 900px) {
-            .fetes-content {
+            .festive-content {
                 flex-wrap: nowrap;
             }
         }
 
-        .fetes-text {
-            flex: 2;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            text-align: justify; /* **TEXTE DES VOEUX JUSTIFIÉ** */
-        }
-
-
-        /* Encadré photo */
-        .fetes-photo {
+        .festive-text {
             flex: 1;
-            background-color: #EEF3F9;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .festive-text strong {
+            font-size: 1.1rem;
+        }
+
+        .festive-image-wrapper {
+            background: #ffffff;
             padding: 12px;
-            border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-            display: flex;
-            justify-content: center;
-            align-self: center;
-            min-width: 200px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
-        .fetes-photo img {
-            max-width: 200px;
+        .festive-image {
             width: 100%;
-            border-radius: 8px;
+            max-width: 220px;
+            border-radius: 12px;
         }
-
-        /* Appel à l'action en bas - STYLE UNIFORME ET JUSTIFIÉ */
-        .fetes .cap { 
-            margin-top: 30px; 
-            padding-top: 15px; 
-            
-            /* Styles uniformisés */
-            font-weight: 400; /* Normal, comme le texte des vœux */
-            letter-spacing: normal; /* Normal, comme le texte des vœux */
-            font-size: 1.1rem; /* Même taille que le texte des vœux */
-            line-height: 1.6; /* Même interligne */
-            color: #2C3E50; /* Couleur principale */
-            
-            text-align: justify; /* **MESSAGE D'APPEL JUSTIFIÉ** */
-        }
-
 
         footer {
             background-color: #2C3E50;
             color: white;
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 60px;
+            padding: 40px 20px;
             line-height: 2;
+            margin-top: 80px;
         }
 
         footer a {
@@ -169,67 +147,66 @@
         }
     </style>
 </head>
-
 <body>
 
 <header>
-    <a href="/">
-        <h1>ENGAGÉ-ES</h1>
-    </a>
+    <h1>ENGAGÉ-ES</h1>
 </header>
 
 <div class="container">
 
+    <!-- Bloc politique -->
     <div class="presentation-block">
-        <img src="affiche.jpg" alt="Affiche de campagne de Geoffroy Giraux pour Engagé-es" class="affiche" loading="lazy">
+        <img src="affiche.jpg" alt="Affiche de campagne ENGAGÉ-ES" class="affiche">
 
         <div class="presentation">
-            <p><strong>Geoffroy Giraux<br>51 ans, 2 enfants.</strong></p>
             <p>
-                Avec une solide expertise reposant sur 25 ans d'activités au sein des collectivités territoriales et un mandat dans l'opposition municipale, je vous propose de découvrir notre projet <strong>"Engagé-es"</strong> qui vous replace au cœur des décisions communales.
+                Geoffroy Giraux<br>
+                51 ans, 2 enfants.
             </p>
             <p>
-                Une équipe inédite, forte d'expériences variées, sans attaches politiques, à l'écoute des préoccupations de tous, sans compromission et sans fausses promesses. Nous mettons toutes nos compétences au service d'une gestion saine et transparente de la commune.
+                Avec une solide expertise reposant sur 25 ans d'activités au sein des collectivités territoriales et un mandat dans l'opposition municipale, je vous propose de découvrir notre projet <strong>« Engagé-es »</strong> qui vous replace au cœur des décisions communales.
             </p>
             <p>
-                C'est ça être <strong>"Engagé-es".</strong>
+                Une équipe inédite, forte d'expériences variées, sans attaches politiques, à l'écoute des préoccupations de tous, sans compromission et sans fausses promesses. Nous mettons toutes nos compétences au service d'une gestion saine et transparente de la commune, respectueuse du bien-être et de la sécurité de chacun, pour que La Croix-Saint-Ouen soit chaleureuse et vivante.
+            </p>
+            <p>
+                C'est ça être <strong>ENGAGÉ-ES</strong>.
             </p>
         </div>
     </div>
 
-    <div class="separator">🎄 ✨ 🎄 ✨ 🎄 ✨ 🎄</div>
+    <!-- Séparateur -->
+    <div class="separator">🎄 ✨ 🎄</div>
 
-    <section class="fetes">
-        <div class="fetes-content">
-            <div class="fetes-text">
+    <!-- Message de fêtes -->
+    <div class="festive-section">
+        <div class="festive-content">
+
+            <div class="festive-text">
+                <p><strong>Les Engagé-es vous souhaitent de très belles fêtes de fin d’année.</strong></p>
                 <p>
-                    Les <strong>Engagé-es</strong> vous souhaitent de très belles fêtes de fin d'année.
+                    Des moments de partage, de solidarité et de chaleur humaine, essentiels pour construire ensemble l’avenir de notre commune.
+                </p>
+                <p>
+                    <strong>Changeons de cap en 2026.</strong>
                 </p>
             </div>
 
-            <div class="fetes-photo">
-                <img src="sapin.jpg" alt="Sapin de Noël décoré, image de saison" loading="lazy">
+            <div class="festive-image-wrapper">
+                <img src="sapin.jpg" alt="Sapin de Noël" class="festive-image">
             </div>
-        </div>
-        
-        <p class="cap">
-            <strong>Changeons de cap en 2026 !</strong>
-        </p>
 
-    </section>
+        </div>
+    </div>
 
 </div>
 
 <footer>
-    <p><strong>Nous contacter :</strong>
-        <a href="mailto:engage.es.lacroixsaintouen@gmail.com">
-            engage.es.lacroixsaintouen@gmail.com
-        </a>
-    </p>
+    <p><strong>Nous contacter :</strong> <a href="mailto:engage.es.lacroixsaintouen@gmail.com">engage.es.lacroixsaintouen@gmail.com</a></p>
     <p><a href="https://www.facebook.com/share/1D7J2Rh92y/" target="_blank">Facebook</a></p>
-    <p><a href="https://www.instagram.com/engage.es.lacroixsaintouen?igsh=dnByb3p4bjE3Y3pz" target="_blank">Instagram</a></p>
+    <p><a href="https://www.instagram.com/engage.es.lacroixsaintouen" target="_blank">Instagram</a></p>
 </footer>
 
 </body>
 </html>
-
