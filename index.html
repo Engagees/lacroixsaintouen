@@ -80,27 +80,34 @@
         .separator {
             margin: 80px auto 40px;
             text-align: center;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             opacity: 0.6;
         }
 
-        /* Bloc vidéo */
+        /* Section vidéo verticale */
         .video-section {
-            background: #ffffff;
-            border-radius: 18px;
-            padding: 40px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            display: flex;
+            justify-content: center;
         }
 
-        .video-wrapper {
+        .video-card {
+            background: #ffffff;
+            padding: 16px;
+            border-radius: 18px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+            max-width: 360px;
+            width: 100%;
+        }
+
+        .video-vertical {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
-            height: 0;
+            width: 100%;
+            padding-top: 177.78%; /* 9:16 */
             overflow: hidden;
             border-radius: 14px;
         }
 
-        .video-wrapper iframe {
+        .video-vertical iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -115,7 +122,7 @@
             text-align: center;
             padding: 40px 20px;
             line-height: 2;
-            margin-top: 80px;
+            margin-top: 90px;
         }
 
         footer a {
@@ -161,22 +168,32 @@
     <!-- Séparateur -->
     <div class="separator">— 🎥 —</div>
 
-    <!-- Vidéo de vœux -->
+    <!-- Vidéo verticale -->
     <div class="video-section">
-        <div class="video-wrapper">
-            <iframe 
-                src="https://www.youtube.com/embed/aN_dVafIydE?rel=0&modestbranding=1"
-                allowfullscreen>
-            </iframe>
+        <div class="video-card">
+            <div class="video-vertical">
+                <iframe
+                    src="https://www.youtube.com/embed/aN_dVafIydE?rel=0&modestbranding=1&playsinline=1"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </div>
 
 </div>
 
 <footer>
-    <p><strong>Nous contacter :</strong> <a href="mailto:engage.es.lacroixsaintouen@gmail.com">engage.es.lacroixsaintouen@gmail.com</a></p>
-    <p><a href="https://www.facebook.com/share/1D7J2Rh92y/" target="_blank">Facebook</a></p>
-    <p><a href="https://www.instagram.com/engage.es.lacroixsaintouen" target="_blank">Instagram</a></p>
+    <p><strong>Nous contacter :</strong>
+        <a href="mailto:engage.es.lacroixsaintouen@gmail.com">
+            engage.es.lacroixsaintouen@gmail.com
+        </a>
+    </p>
+    <p>
+        <a href="https://www.facebook.com/share/1D7J2Rh92y/" target="_blank">Facebook</a>
+    </p>
+    <p>
+        <a href="https://www.instagram.com/engage.es.lacroixsaintouen" target="_blank">Instagram</a>
+    </p>
 </footer>
 
 </body>
