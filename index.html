@@ -78,53 +78,35 @@
 
         /* Séparateur */
         .separator {
-            margin: 70px auto 50px;
+            margin: 80px auto 40px;
             text-align: center;
-            font-size: 1.6rem;
-            opacity: 0.8;
+            font-size: 1.4rem;
+            opacity: 0.6;
         }
 
-        /* Encadré fêtes */
-        .festive-section {
-            background-color: #E9EFF7;
+        /* Bloc vidéo */
+        .video-section {
+            background: #ffffff;
             border-radius: 18px;
             padding: 40px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
         }
 
-        .festive-content {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            flex-wrap: wrap;
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 14px;
         }
 
-        @media (min-width: 900px) {
-            .festive-content {
-                flex-wrap: nowrap;
-            }
-        }
-
-        .festive-text {
-            flex: 1;
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-
-        .festive-text strong {
-            font-size: 1.1rem;
-        }
-
-        .festive-image-wrapper {
-            background: #ffffff;
-            padding: 12px;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .festive-image {
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            max-width: 220px;
-            border-radius: 12px;
+            height: 100%;
+            border: none;
         }
 
         footer {
@@ -177,26 +159,15 @@
     </div>
 
     <!-- Séparateur -->
-    <div class="separator">🎄 ✨ 🎄</div>
+    <div class="separator">— 🎥 —</div>
 
-    <!-- Message de fêtes -->
-    <div class="festive-section">
-        <div class="festive-content">
-
-            <div class="festive-text">
-                <p><strong>Les Engagé-es vous souhaitent de très belles fêtes de fin d’année.</strong></p>
-                <p>
-                    Des moments de partage, de solidarité et de chaleur humaine, essentiels pour construire ensemble l’avenir de notre commune.
-                </p>
-                <p>
-                    <strong>Changeons de cap en 2026.</strong>
-                </p>
-            </div>
-
-            <div class="festive-image-wrapper">
-                <img src="sapin.jpg" alt="Sapin de Noël" class="festive-image">
-            </div>
-
+    <!-- Vidéo de vœux -->
+    <div class="video-section">
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/aN_dVafIydE?rel=0&modestbranding=1"
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 
